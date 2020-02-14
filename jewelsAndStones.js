@@ -48,5 +48,23 @@ ite            currentValue  | Iter2     |Output
 return sum;
 */
 
+var J = "abC";
+var S = "aAbBcC";
+
+var sorted = function(str1, str2){
+    var sum = 0;
+    // First iteration
+    for(i = 0; i < str1.length; i++){
+        // Second iteration
+        for(j = 0; j < str2.length; j++){
+            if(str1[i] === str2[j]){
+                sum++;
+            }
+        }
+    }
+    return sum;
+}
+console.log(sorted(J, S));
+
 
 
