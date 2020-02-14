@@ -5,18 +5,48 @@ The letters in J are guaranteed distinct, and all characters in J and S are lett
 
 Example 1:
 
-Input: J = "aA", S = "aAAbbbb"
+Input: J = "aA", S = "AaAbbbb" // a , A, A
 Output: 3
 Example 2:
 
-Input: J = "z", S = "ZZ"
+Input: J = "z", S = "ZZ" // 0
 Output: 0
 Note:
+
+Input: J = "abC", S = "aAbBC" // a b  - 3
 
 S and J will consist of letters and have length at most 50.
 The characters in J are distinct.
 */
-
-// Navigator: ENTER_NAME
-// Driver: ENTER_NAME
+// Navigator: Matthew
+// Driver: Priyanka
 // your code here
+/*
+
+J = Jewels (guaranteed distinct)
+S = Stones
+
+a = 'different type of stone from A'
+A = 'stone'
+
+Steps:-
+- Given two strings(str1, str2)
+- str1 is distinct, str2 can have repetitive letters
+- Calculate the length of str1
+- Create a sum variable, and initialize to 0
+- iterate through the str1 (i)
+    - iterate through the str2 (j)
+
+Length of J - 2
+var J = "aA";
+S = "AaAbbbb";
+var sum = 0;
+
+ite            currentValue  | Iter2     |Output
+0               a              str2[0]   | sum + 1 = 1
+1               A              str2[1]   | sum + 1 + 1 = 3
+return sum;
+*/
+
+
+
