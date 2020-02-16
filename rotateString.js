@@ -24,14 +24,16 @@ A and B will have length at most 100.
 
 /*
 Steps
-1. Function expects a string1, string2
-2. Create a boolean variable
-3. return the boolean variable
-4. create a variable newArr and split the string based on ''
-5. take the first value of array into the variable
-6. pop that first value of an array and push it to the newArr
-7. compare it with the second array
-8. repeat it till the length of the array
+- Function expects a string1, string2
+- Create a boolean variable
+- create a variable newArr and split the string based on ''
+- take the first value of array into the variable
+- pop that first value of an array and push it to the newArr
+- compare it with the second array
+- repeat it till the length of the array
+- If there a match set the boolean variable to true and return it
+- Else, set the str1 to the newstring and repeat the process
+- if there is a no match at all, set the boolean variable to false and return it.
 */
 
 const shiftStrings = function(str1, str2) {
